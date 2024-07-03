@@ -1,0 +1,104 @@
+/* Mengatur gaya umum untuk halaman */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Mengatur gaya untuk container */
+.container {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Mengatur gaya untuk logo */
+.logo {
+    max-width: 100px; /* Sesuaikan ukuran logo */
+    margin-bottom: 20px; /* Jarak antara logo dan elemen berikutnya */
+}
+
+/* Mengatur gaya untuk judul */
+h1 {
+    font-size: 26px;
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+/* Mengatur gaya untuk label dan paragraf */
+label, p {
+    margin: 12px 0;
+    color: #00796b;
+}
+
+/* Mengatur gaya untuk input dan tombol */
+input[type="number"], input[type="text"], button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #b0bec5;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* Mengatur gaya untuk tombol */
+button {
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Mengatur gaya untuk tombol ketika dihover */
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Mengatur gaya untuk tombol ketika diklik */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Gaya untuk tombol lokasi awal */
+.lokasiAwalButton {
+    background-color: #00796b;
+}
+
+.lokasiAwalButton:hover {
+    background-color: #004d40;
+}
+
+/* Gaya untuk tombol lokasi tujuan */
+.lokasiTujuanButton {
+    background-color: #0288d1;
+}
+
+.lokasiTujuanButton:hover {
+    background-color: #01579b;
+}
+
+/* Gaya untuk tombol Hitung */
+button[type="button"] {
+    background-color: orange; /* Warna oranye untuk tombol Hitung */
+}
+
+button[type="button"]:hover {
+    background-color: darkorange; /* Warna lebih gelap saat tombol Hitung dihover */
+}
+
+/* Gaya untuk tombol Simpan */
+button[type="submit"] {
+    background-color: orange; /* Warna oranye untuk tombol Simpan */
+}
+
+button[type="submit"]:hover {
+    background-color: darkorange; /* Warna lebih gelap saat tombol Simpan dihover */
+}

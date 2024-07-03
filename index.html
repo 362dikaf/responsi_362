@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Biaya Pengiriman</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="iconjp.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>Hitung Biaya Pengiriman</h1>
+        <form id="formPengiriman" action="responsi.php" method="post">
+            <!-- Tombol untuk memasukkan lokasi awal -->
+            <button type="button" class="lokasiAwalButton" onclick="masukkanLokasi('lokasiAwal')">Masukkan Lokasi Awal</button>
+            <!-- Input tersembunyi untuk menyimpan lokasi awal -->
+            <input type="hidden" id="lokasiAwal" name="lokasiAwal" required>
+
+            <!-- Tombol untuk memasukkan lokasi tujuan -->
+            <button type="button" class="lokasiTujuanButton" onclick="masukkanLokasi('lokasiTujuan')">Masukkan Lokasi Tujuan</button>
+            <!-- Input tersembunyi untuk menyimpan lokasi tujuan -->
+            <input type="hidden" id="lokasiTujuan" name="lokasiTujuan" required>
+            
+            <!-- Input untuk memasukkan jarak dalam kilometer -->
+            <label for="jarak">Jarak (dalam km):</label>
+            <input type="number" id="jarak" name="jarak" required>
+            
+            <!-- Tombol untuk menghitung biaya pengiriman -->
+            <button type="button" onclick="hitungBiaya()">Hitung</button>
+            
+            <!-- Paragraf untuk menampilkan hasil perhitungan -->
+            <p id="hasil"></p>
+            
+            <!-- Input tersembunyi untuk menyimpan biaya pengiriman -->
+            <input type="hidden" id="biaya" name="biaya">
+            
+            <!-- Tombol untuk menyimpan data ke server -->
+            <button type="submit">Simpan</button>
+        </form>
+    </div>
+    <script src="responsi.js"></script>
+</body>
+</html>

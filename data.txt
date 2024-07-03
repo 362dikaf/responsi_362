@@ -1,0 +1,5 @@
+Jarak: 3 km, Biaya: Rp45000
+Jarak: 7 km, Biaya: Rp105000
+Lokasi Awal: sleman utara, Lokasi Tujuan: bantul, Jarak: 20 km, Biaya: Rp300000
+Lokasi Awal: bantul, Lokasi Tujuan: kulon progo, Jarak: 30 km, Biaya: Rp450000
+Lokasi Awal: diy, Lokasi Tujuan: jawa timur, Jarak: 90 km, Biaya: Rp1350000
